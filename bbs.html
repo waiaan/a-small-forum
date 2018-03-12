@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" href="bbs.css">
+ </head>
+
+ <body>
+  <div id="main">
+		<!--登录界面-->
+		<div id="ulogin">
+			<span></span>
+			账号：<input name="uname" id="logName"><br>
+			密码：<input type="password" name="upwd" id="logPwd"><br>
+			<button id="loginCheck">登录</button><button id="register">注册</button>
+		</div>
+		<!--版块列表-->
+		<div id="formList">
+			<ul>
+				<li><a href="1" class="boardSel">新手上路</a></li>
+				<li><a href="2">天南海北</a></li>
+			</ul>
+			<!-- 搜索框 -->
+			<div id="searchThreads">
+				<input type="search" name="searchThreads" placeholder="请输入要搜索的帖子标题">
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
+		<!--讨论区-->
+		<div id="dis">
+			<!--/*讨论区标题*/-->
+			<ul id="disTitle">
+				<li>主题</li>
+				<li>作者</li>
+				<li>发帖时间</li>
+			</ul>
+			<!--/*讨论区内容*/-->
+			<div>
+			
+			</div>
+		</div>
+		<!--发帖区-->
+		<div id="postCont">
+			<input placeholder="请输入标题"><br>
+			<textarea placeholder="请输入内容"></textarea><br>
+			<button disabled>发表</button>
+		</div>
+	</div>
+	<!--帖子内容-->
+	<div id="tcontent">
+		<button>关闭</button>
+	</div>
+	<!--用户注册-->
+	<div id="shelter">
+		<div id="ureg">
+			<span></span><br>
+			账号：<input name="uname" id="regname"><br>
+			密码：<input type="password" name="upwd" id="regpwd"><br>
+			<button disabled>提交</button>
+			<a href="#">×</a>
+		</div>
+	</div>
+	<script src="bbs.js"></script>
+ </body>
+</html>
